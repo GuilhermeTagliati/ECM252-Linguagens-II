@@ -1,80 +1,29 @@
-/* ROOT */
-body {
-    margin: 0;
-    overflow-x: hidden;
+/* NAVBAR */
+
+/* END NAVBAR */
+
+/* BREAD CRUMB */
+
+.breadcrumb {
+    border-radius: 0 !important;
 }
 
-/* HEADER */
-header.main-header {
-    padding: 0.5rem 0.5rem 0 0.5rem;
-    background: #eef;
-}
-footer.breadcrumb-header {
-    background-color: #eeeee1;
-}
-/* BREADCRUMB */
-ul.breadcrumb {
-    margin: 0;
-    padding: 10px 16px;
-    list-style: none;
-}
-ul.breadcrumb li {
-    display: inline;
-    font-size: 18px;
-}
-ul.breadcrumb li + li:before {
-    padding: 8px;
-    content: "/\00a0";
-}
-ul.breadcrumb li a {
-    text-decoration: none;
-}
-ul.breadcrumb li a:hover {
-    text-decoration: underline;
-}
-/* MAIN CONTAINER */
-
-.item-left{
-    float: left;
-    width: 66%;
-    height: 100%;
-    padding: 10px;
-}
-.item-right{
-    float: left;
-    width: 30%;
-    height: 100%;
-}
-/* FOOTER */
-footer.main-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #444;
-    color: white;
-}
-/* UTILITIES */
-.btn{
-    padding: 5px 15px;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    font-weight: bold;
-}
-.btn-outline-primary{
-    border: 2px solid blueviolet;
+light-font .breadcrumb-item+.breadcrumb-item::before {
     color: blueviolet;
-    background-color: white;
-    transition: 300ms;
 }
-.btn-outline-primary:hover{
-    background: blueviolet;
-    color: white;
+
+.light-font .breadcrumb-item.active {
+    color: blueviolet;
 }
-.text-centered {
-    text-align: center;
+
+/* END BREAD CRUMB */
+
+/* CAROUSEL */
+
+.jumbotron-custom {
+    background: url("../images/Campus_foto_aérea.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
 }
-.text-right{
-    text-align: end;
-}
+
+/* END CAROUSEL */
