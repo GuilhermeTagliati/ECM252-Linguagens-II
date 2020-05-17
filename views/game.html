@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Eng. Computação</title>
+
+     <!-- FONTAWESOME -->
+     <script src="https://kit.fontawesome.com/a1d05124c7.js" crossorigin="anonymous"></script>
+     <!-- MDB DEPENDENCIES -->
+     <link rel="stylesheet" href="../node_modules/mdbootstrap/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../node_modules/mdbootstrap/css/mdb.lite.css">
+
+     <!-- CUSTOM CSS -->
+     <link rel="stylesheet" href="../public/css/style.css">
+     <link rel="stylesheet" href="../public/css/game.css">
+</head>
+
+<body>
+     <!-- NAVBAR -->
+     <nav class="navbar navbar-expand-lg navbar-dark indigo darken-3 custom-color m-0">
+          <a class="navbar-brand" href="#"><img src="../public/images/logo.png" height="50"
+                    alt="Logo Instituto Mauá de Tecnologia"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#btn-toggle"
+               aria-controls="btn-toggle" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="btn-toggle">
+               <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                         <a class="nav-link" href="index.html">Home
+                         </a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="teachers.html">Professores</a>
+                    </li>
+                    <li class="nav-item active">
+                         <a class="nav-link" href="feedback.html">Feedbacks</a>
+                    </li>
+                    <li class="nav-item active">
+                         <a class="nav-link" href="game.html">Jogo Teste
+                              <span class="sr-only">(current)</span>
+                         </a>
+                    </li>
+               </ul>
+
+               <ul class="navbar-nav ml-auto nav-flex-icons nav-icons">
+                    <li class="nav-item">
+                         <a class="nav-link waves-effect waves-light">
+                              <i class="fab fa-instagram fa-2x"></i>
+                         </a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link waves-effect waves-light">
+                              <i class="fab fa-facebook fa-2x"></i>
+                         </a>
+                    </li>
+               </ul>
+               <form class="form-inline">
+                    <div class="md-form md-outline py-0">
+                         <input type="text" id="form1" class="form-control">
+                         <label for="form1">Credenciais</label>
+                    </div>
+                    <button class="btn btn-outline-primary">Sign In</button>
+               </form>
+          </div>
+     </nav>
+     <!-- END NAVBAR -->
+     <!-- BREADCRUMB -->
+     <nav aria-label="breadcrumb">
+          <ol class="breadcrumb darken-1 mb-0">
+               <li class="breadcrumb-item"><a class="white-text" href="index.html">Home</a></li>
+               <li class="breadcrumb-item active"><a class="white-text" href="game.html">Jogo Teste</a></li>
+          </ol>
+     </nav>
+     <!-- END BREADCRUMB -->
+     <!-- MAIN CONTENT -->
+     <main class="content-light main-content">
+          <div class="container py-5">
+               <div class="jogadores">
+                    <div class="jogador0">
+                         <p class="nome-jogador">Jogador 1</p>
+                         <div class="pontuacao-global" id="pontuacao-global-0"></div>
+                         <div class="caixa-pontuacao-rodada-0">
+                              <p>Pontuação da rodada</p>
+                              <div class="pontuacao-rodada-0" id="pontuacao-rodada-0">
+                              </div>
+                         </div>
+                    </div>
+                    <div class="jogador1">
+                         <p class="nome-jogador">Jogador 2</p>
+                         <div class="pontuacao-global" id="pontuacao-global-1"></div>
+                         <div class="caixa-pontuacao-rodada-1">
+                              <p>Pontuação da rodada</p>
+                              <div class="pontuacao-rodada-1" id="pontuacao-rodada-1">
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="container text-center">
+                    <span id="valor-dado"></span>
+               </div>
+               <div class="botoes">
+                    <button class="btn btn-outline-primary lancar-dado" id="botao-lancar-dado">
+                         Lançar Dado
+                    </button>
+                    <button class=" btn btn-outline-primary passar-vez" id="botao-passar-vez">
+                         Passar vez
+                    </button>
+                    <button class=" btn btn-outline-primary novo-jogo" id="botao-novo-jogo">Novo jogo</button>
+               </div>
+          </div>
+     </main>
+     <!-- Footer -->
+     <footer class="page-footer font-small pt-4">
+          <div class="container-fluid text-center text-md-left">
+               <div class="row">
+                    <div class="col-md-6 mt-md-0 mt-3">
+                         <h4>Campus São Caetano do Sul
+
+                              Praça Mauá 1 São Caetano do Sul - SP
+
+                              Campus de São Paulo
+
+                              R. Pedro de Toledo, 1071</h4>
+                    </div>
+                    <hr class="clearfix w-100 d-md-none pb-3">
+                    <div class="col-md-3 mb-md-0 mb-3">
+                         <h5 class="text-uppercase">Nossos Links</h5>
+
+                         <ul class="list-unstyled">
+                              <li>
+                                   <a href="#!">Associação de Ex Alunos</a>
+                              </li>
+                              <li>
+                                   <a href="#!">Avaliações</a>
+                              </li>
+                              <li>
+                                   <a href="#!">Universidades Parceiras</a>
+                              </li>
+                              <li>
+                                   <a href="#!">Centro de Esporte e Atividades Fisicas</a>
+                              </li>
+                         </ul>
+                    </div>
+                    <div class="col-md-3 mb-md-0 mb-3">
+                         <h5 class="text-uppercase">Fale Conosco</h5>
+                         <a href="#"><span class="badge badge-pill badge-danger">0800 019 3100</span></a>
+                         <a href="https://maua.br/index/chat?_ga=1.106652550.468963231.1464200408"><span
+                                   class="badge badge-pill badge-danger">CHAT ONLINE</span></a>
+                         <a href="https://api.whatsapp.com/send?phone=5508000193100"><span
+                                   class="badge badge-pill badge-success"><i class="fab fa-whatsapp"></i>
+                                   Whatsapp</span></a>
+                    </div>
+               </div>
+          </div>
+          <!-- Copyright -->
+          <div class="footer-copyright text-center py-3">© 2020 Copyright:
+               <a href="https://maua.br/"> Instituto Mauá de Tecnologia</a>
+          </div>
+          <!-- Copyright -->
+
+     </footer>
+     <!-- Footer -->
+     <!-- SCRIPTS MDB -->
+     <script src="../node_modules/mdbootstrap/js/jquery.js"></script>
+     <script src="../node_modules/mdbootstrap/js/popper.js"></script>
+     <script src="../node_modules/mdbootstrap/js/bootstrap.js"></script>
+     <script src="../node_modules/mdbootstrap/js/mdb.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+     <!-- CUSTOM SCRIPT -->
+     <script src="../public/js/app.js"></script>
+</body>
+
+</html>
