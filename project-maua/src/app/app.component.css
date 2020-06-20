@@ -1,0 +1,30 @@
+
+
+/* BREAD CRUMB */
+
+.breadcrumb {
+    border-radius: 0 !important;
+    background: #283593;
+}
+
+
+/* END BREAD CRUMB */
+
+/* JUMBOTRON */
+
+.jumbotron-custom {
+    background: url("../assets/img/Campus_foto_aérea.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* END JUMBOTRON */
+
+
+
+/* TYPOGRAPHY */
+.section-title{
+    padding: 20px;
+    border-bottom: 1px solid #283593;
+}
+/* END TYPOGRAPHY */
