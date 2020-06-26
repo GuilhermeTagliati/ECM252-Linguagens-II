@@ -12,7 +12,7 @@ export class CardComponentComponent implements OnInit {
 
   constructor(private sanitizer: DomSanitizer) { }
   returnPhotoURL() {
-    return this.sanitizer.bypassSecurityTrustResourceUrl('../../assets/svg/people' + 1 + '.svg')
+    return this.sanitizer.bypassSecurityTrustResourceUrl('../../assets/svg/people' + Math.round(Math.random()*3) + '.svg')
   }
   ngOnInit(): void {
   }
