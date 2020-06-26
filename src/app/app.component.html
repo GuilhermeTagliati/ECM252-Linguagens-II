@@ -41,163 +41,29 @@
       </div>
     </div>
     <div class="container-fluid p-4">
-      <h3 class="section-title">Nossos Cursos</h3>
+      <div class="row justify-content-center">
+        <div class="col-6">
+          <app-form-course (courseInsertion)='insertCard($event)'></app-form-course>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid p-4">
       <div class="row">
-        <div class="col-12 col-md-3 col-lg-4 col-xl-4 pt-3">
-          <div class="card">
-            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title"><a>Engenharia da Computação</a></h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias itaque
-                necessitatibus quod explicabo distinctio neque, nisi dolorum a, ipsa facilis optio
-                pariatur voluptatibus ullam consequuntur eius at eos labore saepe?.</p>
-              <a href="#" class="btn btn-primary">Saber mais</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-3 col-lg-4 col-xl-4 pt-3">
-          <div class="card">
-            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title"><a>Engenharia Quimica</a></h4>
-              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
-                corrupti, dolorem assumenda obcaecati non nulla explicabo adipisci, nam, sapiente
-                laboriosam unde! Recusandae neque et quibusdam consectetur velit hic iusto voluptatem!
-              </p>
-              <a href="#" class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-3 col-lg-4 col-xl-4 pt-3">
-          <div class="card">
-            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title"><a>Engenharia de Alimentos</a></h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam id
-                tenetur dolor atque. Nostrum animi excepturi aspernatur veniam deleniti quo omnis soluta
-                id possimus illo voluptatum odit, reprehenderit aperiam commodi.</p>
-              <a href="#" class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-3 col-lg-4 col-xl-4 pt-3">
-          <div class="card">
-            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title"><a>Engenharia Mecanica</a></h4>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad quos ipsam
-                nesciunt! Fugiat doloremque ab odit, dolor dicta blanditiis illo laboriosam a modi
-                repellendus, expedita nobis rerum temporibus excepturi tempora.</p>
-              <a href="#" class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-3 col-lg-4 col-xl-4 pt-3">
-          <div class="card">
-            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title"><a>Engenharia de Produção</a></h4>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae est
-                fugiat incidunt illo maxime, officiis vero maiores magni asperiores beatae illum
-                sapiente laborum recusandae eos quasi laudantium nemo quidem pariatur.</p>
-              <a href="#" class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-3 col-lg-4 col-xl-4 pt-3">
-          <div class="card">
-            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title"><a>Engenharia Civil</a></h4>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dicta
-                corrupti, amet inventore fugit maiores repellendus tenetur omnis accusamus beatae quos
-                nostrum quisquam quam eum illum soluta iure perferendis repellat.</p>
-              <a href="#" class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-3 col-lg-4 col-xl-4 pt-3">
-          <div class="card">
-            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title"><a>Engenharia de Controle</a></h4>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dicta
-                corrupti, amet inventore fugit maiores repellendus tenetur omnis accusamus beatae quos
-                nostrum quisquam quam eum illum soluta iure perferendis repellat.</p>
-              <a href="#" class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-3 col-lg-4 col-xl-4 pt-3">
-          <div class="card">
-            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title"><a>Engenharia Eletronica</a></h4>
-              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab libero
-                placeat expedita deleniti voluptatem perspiciatis cum earum. Sapiente cupiditate, rerum
-                illo repellat sequi aperiam ratione eaque minus similique fugiat ducimus!</p>
-              <a href="#" class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-3 col-lg-4 col-xl-4 pt-3">
-          <div class="card">
-            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title"><a>Engenharia Elétrica</a></h4>
-              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid ad
-                aspernatur autem commodi pariatur ducimus corporis voluptatibus ea debitis minus?
-                Ducimus facilis pariatur tempore commodi molestias porro dignissimos iste nihil?</p>
-              <a href="#" class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-3 col-lg-4 col-xl-4 pt-3">
-          <div class="card">
-            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title"><a>Administração</a></h4>
-              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus odio neque repellat,
-                tempore necessitatibus nostrum distinctio reprehenderit a, incidunt, saepe inventore fugiat ea corporis
-                dolorem dignissimos ut impedit itaque est.</p>
-              <a href="#" class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-3 col-lg-4 col-xl-4 pt-3">
-          <div class="card">
-            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title"><a>Design</a></h4>
-              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid ad aspernatur autem
-                commodi pariatur ducimus corporis voluptatibus ea debitis minus? Ducimus facilis pariatur tempore
-                commodi molestias porro dignissimos iste nihil?</p>
-              <a href="#" class="btn btn-primary">Button</a>
-            </div>
-          </div>
+        <div class="col-12">
+          <app-card-component [courses]="cursos"></app-card-component>
         </div>
       </div>
     </div>
   </main>
   <!-- Footer -->
+  
   <app-footer-component></app-footer-component>
   <!-- Footer -->
   <!-- SCRIPTS MDB -->
-  <script src="../node_modules/mdbootstrap/js/jquery.js"></script>
-  <script src="../node_modules/mdbootstrap/js/popper.js"></script>
-  <script src="../node_modules/mdbootstrap/js/bootstrap.js"></script>
-  <script src="../node_modules/mdbootstrap/js/mdb.js"></script>
+  <script src="../../node_modules/mdbootstrap/js/jquery.js"></script>
+  <script src="../../node_modules/mdbootstrap/js/popper.js"></script>
+  <script src="../../node_modules/mdbootstrap/js/bootstrap.js"></script>
+  <script src="../../node_modules/mdbootstrap/js/mdb.js"></script>
 </body>
 
 </html>

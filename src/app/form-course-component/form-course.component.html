@@ -1,0 +1,25 @@
+<div class="card p-5">
+    <h5 class="section-title">Adicionar Cursos</h5>
+    <div class="form-row">
+        <div class="col-12">
+            <div class="md-form md-outline">
+                <input type="text" [(ngModel)]="nomeCurso" class="form-control" id="name-course">
+                <label for="name-course" class="active">Nome Curso</label>
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-12">
+            <div class="md-form md-outline">
+                <textarea name="desc-course" [(ngModel)]="descCurso" id="desc-course" cols="30" rows="4"
+                    class="form-control" style="resize: none;"></textarea>
+                <label for="desc-course" class="active">Descrição Curso</label>
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-12">
+            <button class="btn btn-outline-primary btn-sm float-right" (click)="createCourse()">Salvar</button>
+        </div>
+    </div>
+</div>
