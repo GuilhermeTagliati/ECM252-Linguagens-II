@@ -121,6 +121,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "project-maua"
+    }
+  },
+  "defaultProject": "project-maua",
+  "cli": {
+    "analytics": "38c785ca-6eba-4eda-836d-65f6c235691b"
+  }
 }
