@@ -1,12 +1,9 @@
-
-
 /* BREAD CRUMB */
 
 .breadcrumb {
     border-radius: 0 !important;
     background: #283593;
 }
-
 
 /* END BREAD CRUMB */
 
@@ -20,11 +17,24 @@
 
 /* END JUMBOTRON */
 
-
-
 /* TYPOGRAPHY */
-.section-title{
+
+.section-title {
     padding: 20px;
     border-bottom: 1px solid #283593;
 }
+
 /* END TYPOGRAPHY */
+
+/* NAVBAR */
+
+.navbar label {
+    padding: 0;
+    margin-left: 10px !important;
+}
+
+.navbar label.active {
+    background: #283593 !important;
+}
+
+/* END NAVBAR */

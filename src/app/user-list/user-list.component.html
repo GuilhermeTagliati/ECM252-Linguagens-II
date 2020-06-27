@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-4" *ngFor="let user of users">
+        <div class="card mb-4">
+
+            <!--Card image-->
+            <div class="view overlay text-center">
+                <a href="#!">
+                    <div class="mask rgba-white-slight"></div>
+                </a>
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">{{user.userName}}  {{user.userAge}} Anos</h4>
+                <p class="card-text">{{user.userEmail}}</p>
+                <p class="card-text">{{user.userCourse}}</p>
+                <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+            </div>
+
+        </div>
+    </div>
+</div>

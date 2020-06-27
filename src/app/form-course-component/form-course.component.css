@@ -1,0 +1,8 @@
+.btn-custom{
+    transition: 400ms !important;
+}
+.btn-custom:hover{
+    color: white !important;
+    border-color: white !important; 
+    background: #ff0000 !important;
+}

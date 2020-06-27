@@ -1,9 +1,0 @@
-/* NAVBAR */
-.navbar label{
-    padding: 0;
-    margin-left: 10px !important;
-}
-.navbar label.active{
-    background: #283593 !important;
-}
-/* END NAVBAR */

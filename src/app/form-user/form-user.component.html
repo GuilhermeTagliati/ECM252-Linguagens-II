@@ -1,0 +1,47 @@
+<div class="card p-5">
+    <h5 class="section-title">Adicionar Alunos</h5>
+    <form #user="ngForm" (ngSubmit)="saveUser(user)">
+        <div class="form-row">
+            <div class="col-8">
+                <div class="md-form md-outline">
+                    <input type="text" class="form-control" id="user-name" name="userName" ngModel>
+                    <label for="name-course" class="active">Nome</label>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="md-form md-outline">
+                    <input type="number" class="form-control" id="user-age" name="userAge" ngModel>
+                    <label for="name-course" class="active">Idade</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-12">
+                <div class="md-form md-outline">
+                    <select name="userCourse" id="user-course" class="form-control" ngModel>
+                        <option value="ECM">Engenharia da Computação</option>
+                        <option value="ECA">Engenharia de Controle e Automação</option>
+                        <option value="EQM">Engenharia Quimica</option>
+                        <option value="ECV">Engenharia Civil</option>
+                        <option value="EMC">Engenharia Mecanica</option>
+                        <option value="EPR">Engenharia de Produção</option>
+                    </select>
+                    <label for="user-course" class="active"></label>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-12">
+                <div class="md-form md-outline">
+                    <input type="email" class="form-control" id="user-email" name="userEmail" ngModel>
+                    <label for="name-course" class="active">Email</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-12">
+                <button class="btn btn-outline-primary btn-sm float-right" type="submit">Salvar</button>
+            </div>
+        </div>
+    </form>
+</div>

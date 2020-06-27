@@ -4,7 +4,7 @@
         <div class="col-12">
             <div class="md-form md-outline">
                 <input type="text" [(ngModel)]="nomeCurso" class="form-control" id="name-course">
-                <label for="name-course" class="active">Nome Curso</label>
+                <label for="name-course" class="active" [ngStyle]="{'font-weight': 'bold'}">Nome Curso</label>
             </div>
         </div>
     </div>
@@ -13,13 +13,13 @@
             <div class="md-form md-outline">
                 <textarea name="desc-course" [(ngModel)]="descCurso" id="desc-course" cols="30" rows="4"
                     class="form-control" style="resize: none;"></textarea>
-                <label for="desc-course" class="active">Descrição Curso</label>
+                <label for="desc-course" class="active" [ngStyle]="getFormLabeltoBold()">Descrição Curso</label>
             </div>
         </div>
     </div>
     <div class="form-row">
         <div class="col-12">
-            <button class="btn btn-outline-primary btn-sm float-right" (click)="createCourse()">Salvar</button>
+            <button class="btn btn-outline-primary btn-sm float-right" [ngClass]="['btn-custom']" (click)="createCourse()">Salvar</button>
         </div>
     </div>
 </div>

@@ -20,7 +20,14 @@ export class FormCourseComponent implements OnInit {
     this.nomeCurso = null
     this.descCurso = null
   }
+
   
+  getFormLabeltoBold(){
+    return {
+      'font-weight': 'bold',
+      'font-size': '16px'
+    }
+  }
   constructor() { }
 
   ngOnInit(): void {

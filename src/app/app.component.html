@@ -15,8 +15,47 @@
 
 <body>
   <!-- NAVBAR -->
-  <app-navbar-component></app-navbar-component>
-  <!-- END NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark indigo darken-3 custom-color m-0">
+    <a class="navbar-brand" href="#"><img src="../../assets/img/logo.png" height="50"
+        alt="Logo Instituto Mauá de Tecnologia"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#btn-toggle"
+      aria-controls="btn-toggle" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="btn-toggle">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" (click)="openCourses()">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="openUsers()">Users</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="game.html">Jogo Teste</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ml-auto nav-flex-icons nav-icons">
+        <li class="nav-item">
+          <a class="nav-link waves-effect waves-light">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-effect waves-light">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+      <form class="form-inline">
+        <div class="md-form md-outline py-0">
+          <input type="text" id="form1" class="form-control">
+          <label for="form1">Credenciais</label>
+        </div>
+        <button class="btn btn-outline-primary">Sign In</button>
+      </form>
+    </div>
+  </nav> <!-- END NAVBAR -->
   <!-- BREADCRUMB -->
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb darken-1 mb-0">
@@ -43,20 +82,22 @@
     <div class="container-fluid p-4">
       <div class="row justify-content-center">
         <div class="col-6">
-          <app-form-course (courseInsertion)='insertCard($event)'></app-form-course>
+          <app-form-course (courseInsertion)='insertCard($event)' *ngIf="showCourses"></app-form-course>
+          <app-form-user (userInsert)='insertUser($event)' *ngIf="showUsers"></app-form-user>
         </div>
       </div>
     </div>
     <div class="container-fluid p-4">
       <div class="row">
         <div class="col-12">
-          <app-card-component [courses]="cursos"></app-card-component>
+          <app-card-component [courses]="cursos" *ngIf="showCourses"></app-card-component>
+          <app-user-list [users]="users" *ngIf="showUsers"></app-user-list>
         </div>
       </div>
     </div>
   </main>
   <!-- Footer -->
-  
+
   <app-footer-component></app-footer-component>
   <!-- Footer -->
   <!-- SCRIPTS MDB -->
